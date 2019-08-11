@@ -1,0 +1,112 @@
+:root {
+  --base-color: #5ea895;
+  --grey: #8d8d8d;
+  --light-grey: #f9f9f9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR STYLES */
+.navbar {
+  height: 6em;
+}
+.contact-link {
+  background-color: var(--base-color);
+  color: white;
+}
+
+/* HEADER STYLES */
+header {
+  font-family: "Lexend Deca", sans-serif;
+  height: 90vh;
+  color: black;
+}
+header h4 {
+  color: var(--grey);
+  margin-bottom: 1.5em;
+}
+header h1 {
+  line-height: 1.6;
+  font-size: 3em;
+  margin-bottom: 1em;
+  justify-content: space-evenly;
+}
+
+.social-icon-column .fab {
+  font-size: 1.5em;
+  margin-bottom: 3em;
+  color: black;
+}
+
+.scroll-arrow .fas {
+  padding: 2em;
+  background-color: var(--light-grey);
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/* PORTFOLIO STYLES */
+.see-more-button {
+  padding: 1.5em 4em;
+  background-color: var(--base-color);
+  color: white;
+}
+
+.see-more-button:hover {
+  border: 2px solid var(--base-color);
+  background-color: white;
+  color: var(--base-color);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.05s linear;
+}
+
+/* SERVICES STYLES */
+#services .col-md-4 {
+  background-color: var(--light-grey);
+}
+
+#services .col-md-4 h4 {
+  color: var(--base-color);
+}
