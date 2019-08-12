@@ -185,3 +185,16 @@ header h1 {
   margin: 0.5em;
   transition: 0.2s ease-in-out;
 }
+
+#technologies {
+  margin-bottom: 5em;
+}
+
+footer {
+  margin: 2em;
+}
+footer p {
+  color: var(--grey);
+  font-size: 1.1em;
+  font-weight: 400;
+}
