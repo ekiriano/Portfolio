@@ -1,5 +1,6 @@
+/* --base-color: #5ea895; #63ccca*/
 :root {
-  --base-color: #5ea895;
+  --base-color: #ea7900;
   --grey: #8d8d8d;
   --light-grey: #f9f9f9;
 }
@@ -8,13 +9,18 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  margin-bottom: 6em;
+}
+
 /* NAVIGATION BAR STYLES */
 .navbar {
   height: 6em;
 }
 .contact-link {
   background-color: var(--base-color);
-  color: white;
+  padding: 1em;
+  color: white !important;
 }
 
 /* HEADER STYLES */
@@ -22,6 +28,7 @@ header {
   font-family: "Lexend Deca", sans-serif;
   height: 90vh;
   color: black;
+  margin-bottom: 6em;
 }
 header h4 {
   color: var(--grey);
@@ -87,10 +94,32 @@ header h1 {
 }
 
 /* PORTFOLIO STYLES */
+
+.project {
+  margin-bottom: 3em;
+  color: black;
+}
+.project h3 {
+  color: var(--grey);
+  font-weight: 300;
+  font-size: 1.3em;
+}
+.project h2 {
+  font-size: 3em;
+  font-weight: 400;
+}
+.project p {
+  color: var(--base-color);
+  font-weight: 600;
+}
 .see-more-button {
   padding: 1.5em 4em;
   background-color: var(--base-color);
   color: white;
+}
+
+.see-more-button-wrapper {
+  margin-top: 5em;
 }
 
 .see-more-button:hover {
@@ -102,11 +131,23 @@ header h1 {
   transition: 0.05s linear;
 }
 
+.share .fas {
+  padding: 3em;
+  background-color: var(--base-color);
+  color: white;
+}
+
 /* SERVICES STYLES */
 #services .col-md-4 {
   background-color: var(--light-grey);
 }
 
-#services .col-md-4 h4 {
+#services .fas,
+.col-md-4 h4 {
   color: var(--base-color);
+}
+
+#services .fas {
+  font-size: 2em;
+  margin: 1em;
 }
