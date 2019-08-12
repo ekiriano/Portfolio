@@ -128,7 +128,7 @@ header h1 {
   color: var(--base-color);
   font-weight: bold;
   text-decoration: none;
-  transition: 0.05s linear;
+  transition: 0.05s ease-in-out;
 }
 
 .share .fas {
@@ -138,16 +138,50 @@ header h1 {
 }
 
 /* SERVICES STYLES */
-#services .col-md-4 {
+.service {
   background-color: var(--light-grey);
+  padding: 2em;
+  margin-bottom: 2em;
 }
 
-#services .fas,
-.col-md-4 h4 {
+.service .fas,
+.service h4 {
   color: var(--base-color);
 }
 
-#services .fas {
+.service .fas {
   font-size: 2em;
   margin: 1em;
+}
+
+#services h4 {
+  font-size: 1em;
+}
+
+#services p {
+  color: var(--grey);
+}
+
+/* put a wrapper around title an paragraph ??  */
+.service-title {
+  margin-top: 4em;
+}
+
+.service-paragraph {
+  margin-bottom: 4em;
+}
+
+/* TECHNOLOGIES STYLES */
+
+#technologies .fab {
+  color: var(--grey);
+  font-size: 3.5em;
+  margin: 0.5em;
+}
+
+#technologies .fab:hover {
+  color: var(--base-color);
+  font-size: 3.5em;
+  margin: 0.5em;
+  transition: 0.2s ease-in-out;
 }
