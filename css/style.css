@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 section {
@@ -25,7 +26,6 @@ section {
 
 /* HEADER STYLES */
 header {
-  font-family: "Lexend Deca", sans-serif;
   height: 90vh;
   color: black;
   margin-bottom: 6em;
@@ -94,7 +94,13 @@ header h1 {
 }
 
 /* PORTFOLIO STYLES */
-
+.portfolio-title {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+.portfolio-title p {
+  color: var(--grey);
+}
 .project {
   margin-bottom: 3em;
   color: black;
