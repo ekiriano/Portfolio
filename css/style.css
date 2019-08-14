@@ -41,7 +41,8 @@ header h1 {
   justify-content: space-evenly;
 }
 
-.social-icon-column .fab {
+.social-icon-column .fab,
+.social-icon-column .fas {
   font-size: 1.5em;
   margin-bottom: 3em;
   color: black;
@@ -50,6 +51,7 @@ header h1 {
 .scroll-arrow .fas {
   padding: 2em;
   background-color: var(--light-grey);
+  color: black;
 }
 
 .bounce {
@@ -137,10 +139,40 @@ header h1 {
   transition: 0.05s ease-in-out;
 }
 
-.share .fas {
-  padding: 3em;
+.more .fas {
+  padding: 2.5em;
   background-color: var(--base-color);
   color: white;
+}
+
+.more .fas:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--base-color);
+  background-color: white;
+  border: 4px solid var(--base-color);
+}
+
+.project-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-desc div {
+  margin-left: 3em;
+}
+
+.project-main-desc {
+  color: var(--grey);
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.project-description-wrapper {
+  margin: 4em;
+}
+
+#project.single {
+  margin-top: 6em;
 }
 
 /* SERVICES STYLES */
@@ -148,6 +180,10 @@ header h1 {
   background-color: var(--light-grey);
   padding: 2em;
   margin-bottom: 2em;
+}
+.service:hover {
+  transition: 0.25s ease-in-out;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .service .fas,
@@ -179,13 +215,15 @@ header h1 {
 
 /* TECHNOLOGIES STYLES */
 
-#technologies .fab {
+#technologies .fab,
+#technologies .fas {
   color: var(--grey);
   font-size: 3.5em;
   margin: 0.5em;
 }
 
-#technologies .fab:hover {
+#technologies .fab:hover,
+#technologies .fas:hover {
   color: var(--base-color);
   font-size: 3.5em;
   margin: 0.5em;
@@ -203,4 +241,17 @@ footer p {
   color: var(--grey);
   font-size: 1.1em;
   font-weight: 400;
+}
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Header */
+  header h4 {
+    margin-top: 4em;
+  }
+  header h4,
+  header h1 {
+    text-align: center;
+  }
 }
