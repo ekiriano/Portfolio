@@ -1,4 +1,4 @@
-/* --base-color: #5ea895; #63ccca*/
+/* --base-color: #5ea895; #63ccca  |ea7900*/
 :root {
   --base-color: #ea7900;
   --grey: #8d8d8d;
@@ -252,6 +252,14 @@ footer p {
   }
   header h4,
   header h1 {
+    text-align: center;
+  }
+  .social-icon-column {
+    margin: 3em 0;
+    flex-direction: initial !important;
+    justify-content: space-evenly;
+  }
+  .scroll-arrow {
     text-align: center;
   }
 }
